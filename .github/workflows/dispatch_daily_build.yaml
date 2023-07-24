@@ -44,8 +44,7 @@ jobs:
         with:
           context: .
           push: true
-          platforms:
-          - ${{ env.PLATFORM }} 
+          platforms: 'liniux/arm64'
           tags: |
             ${{ env.ORG }}/${{ github.event.repository.name }}:latest
             ${{ env.ORG }}/${{ github.event.repository.name }}:${{ env.TIME }}
